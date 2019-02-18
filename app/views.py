@@ -1,12 +1,12 @@
 from app import app
+from flask import request, render_template
 
 
 @app.route('/')
-@app.route('/home')
-def index():
-    return mta_Api
+def home():
+    return render_template('home.html')
 
 
 @app.route('/projects')
-def index():
-    return mta_Api
+def project():
+    return render_template('home.html')
